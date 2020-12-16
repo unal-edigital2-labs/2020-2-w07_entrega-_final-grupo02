@@ -19,13 +19,14 @@
  
  Este modulo tiene 2 funciones, activar la generacion de un pulso PWM que hara funcionar al sensor de ultrasonido dada una orden y calcular la distancia 
  haciendo uso del sensor y su propio reloj. Este modulo cuanta con una señal de reset que deberá ser activada una vez la distancia haya sido calculada con 
- el objetivo de limpiar las variables de estado y asi poder calcular una nueva distancia. La señal ENABLE ("orden") se encargara de activar la  generación del pulso
- PWM e indirectamente de activar la señal ECHO, esta ultima permanecera encendida hasta recibir los pulsos emitidos por el sensor cuando se dio la señal 
+ el objetivo de limpiar las variables de estado y asi poder calcular una nueva distancia. La señal ENABLE ("orden"), se encargara de activar la  generación del pulso
+ PWM (señal pulse), e indirectamente de activar la señal ECHO, esta ultima permanecera encendida hasta recibir los pulsos emitidos por el sensor cuando se dio la señal 
  ENABLE inicialmente. El reloj de este modulo es especial ya que se diseño de tal forma de que transforma cada ciclo de reloj en centimetros haciendo uso de 
  la velocidad del sonido y la distancia que  recorre tanto de ida como de vuelta la señal enviada por el ultrasonido, de manera que para calcular distancia
  basta solo con contar los ciclos de reloj desde que la señal ECHO ha sido activada hasta que se encuentre de nuevo en 0. Mediante uso de variables de estado 
  (por ejemplo "logico") se puede determinar cuando el sensor ha terminado de calcular la distancia para finalmente entregarla al Software junto a una señal de 
  done para poder realizar la tarea de mapeo.
  
+ ### Modulo 
  
  
