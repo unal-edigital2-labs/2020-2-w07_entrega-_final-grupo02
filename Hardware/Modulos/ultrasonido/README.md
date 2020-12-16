@@ -42,6 +42,8 @@
  con una señal de reset que inicializa todas la variables en 0 con el fin de poder generar otro pulso, (una vez generado un pulso la única manera de generar otro es 
  mediante la variable reset debido a la arquitectura usada).
  
+ 
+ 
  El bloque general ultrasonido, ("bloqueultrasonido.v"), tambien cuenta con otros bloques destinados al funcionamiento de la máquina de estados y a los 2 módulos 
  explicados anteriormente; sin embargo, estos módulos son simples divisores de frecuencia que funcionan manteniendo una variable en nivel alto durante n ciclos de un
  reloj principal para luego invertirla durante otros n ciclos de reloj, (la cuenta de los ciclos transcurridos se lleva en una variable auxiliar), la variable n dependerá
