@@ -1,0 +1,17 @@
+# Compile of test_cam_TB.v was successful.
+# Compile of buffer_ram_dp.v was successful.
+# Compile of cam_read.v was successful.
+# Compile of test_cam.v was successful.
+# Compile of VGA_driver.v failed with 1 errors.
+# Compile of clk24_25_altera_cyclone.v was successful.
+# 6 compiles, 1 failed with 1 error.
+# Compile of VGA_driver.v was successful.
+# Load canceled
+# Compile of test_cam_TB.v was successful.
+# Compile of buffer_ram_dp.v was successful.
+# Compile of cam_read.v was successful.
+# Compile of test_cam.v was successful.
+# Compile of VGA_driver.v was successful.
+# Compile of clk24_25_altera_cyclone.v was successful.
+# 6 compiles, 0 failed with no errors.
+# Load canceled

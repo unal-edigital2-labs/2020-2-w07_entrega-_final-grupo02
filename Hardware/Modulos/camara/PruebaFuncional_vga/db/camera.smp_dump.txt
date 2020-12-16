@@ -1,0 +1,7 @@
+
+State Machine - |test_cam|cam_read:cam_read|status
+Name status.NOTHING status.BYTE2 status.BYTE1 status.00 
+status.00 0 0 0 0 
+status.BYTE1 0 0 1 1 
+status.BYTE2 0 1 0 1 
+status.NOTHING 1 0 0 1 

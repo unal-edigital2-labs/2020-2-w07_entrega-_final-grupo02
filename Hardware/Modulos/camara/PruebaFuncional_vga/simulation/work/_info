@@ -1,0 +1,151 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/UNAL/semester7/Digital/camara/simulation/modelsim
+vbuffer_ram_dp
+Z0 !s110 1604880639
+!i10b 1
+!s100 0g5RIVI>GC2MnTVKMO6D73
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I[o=z=^VHzf2ccL5J90a991
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dD:/UNAL/semester7/Digital/camara/simulation
+w1604877034
+8D:/UNAL/semester7/Digital/camara/sources/buffer_ram_dp.v
+FD:/UNAL/semester7/Digital/camara/sources/buffer_ram_dp.v
+!i122 7
+L0 1 45
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1604880639.000000
+!s107 D:/UNAL/semester7/Digital/camara/sources/buffer_ram_dp.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/UNAL/semester7/Digital/camara/sources/buffer_ram_dp.v|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+vcam_read
+R0
+!i10b 1
+!s100 :i<9H]gzjD7@LcLfaMF<a2
+R1
+ILYHaTA=W=8Ra3INzeA7L;3
+R2
+R3
+w1604877043
+8D:/UNAL/semester7/Digital/camara/sources/cam_read.v
+FD:/UNAL/semester7/Digital/camara/sources/cam_read.v
+!i122 8
+L0 1 98
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/UNAL/semester7/Digital/camara/sources/cam_read.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/UNAL/semester7/Digital/camara/sources/cam_read.v|
+!i113 1
+R6
+R7
+vclk24_25_altera_cyclone
+Z8 !s110 1604880640
+!i10b 1
+!s100 0moUgAKe`cEG5D[;IH9dk3
+R1
+InW7admLoTcOWVVP9YS`g12
+R2
+R3
+w1604877024
+8D:/UNAL/semester7/Digital/camara/sources/PLL/clk24_25_altera_cyclone.v
+FD:/UNAL/semester7/Digital/camara/sources/PLL/clk24_25_altera_cyclone.v
+!i122 11
+L0 1 132
+R4
+r1
+!s85 0
+31
+Z9 !s108 1604880640.000000
+!s107 D:/UNAL/semester7/Digital/camara/sources/PLL/clk24_25_altera_cyclone.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/UNAL/semester7/Digital/camara/sources/PLL/clk24_25_altera_cyclone.v|
+!i113 1
+R6
+R7
+vtest_cam
+R8
+!i10b 1
+!s100 _dP6Zc`JW`H4i<0]KhzfE2
+R1
+IH0H`7z3BS<Z1bXmz>d:mS3
+R2
+R3
+w1604877058
+8D:/UNAL/semester7/Digital/camara/sources/test_cam.v
+FD:/UNAL/semester7/Digital/camara/sources/test_cam.v
+!i122 9
+L0 1 160
+R4
+r1
+!s85 0
+31
+R9
+!s107 D:/UNAL/semester7/Digital/camara/sources/test_cam.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/UNAL/semester7/Digital/camara/sources/test_cam.v|
+!i113 1
+R6
+R7
+vtest_cam_TB
+R0
+!i10b 1
+!s100 9hEOE89InDlX0Y_WQ2e:X1
+R1
+IDV_@;8fG6iNIzVRRedI1?0
+R2
+R3
+w1604877096
+8D:/UNAL/semester7/Digital/camara/simulation/test_cam_TB.v
+FD:/UNAL/semester7/Digital/camara/simulation/test_cam_TB.v
+!i122 6
+L0 2 264
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/UNAL/semester7/Digital/camara/simulation/test_cam_TB.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/UNAL/semester7/Digital/camara/simulation/test_cam_TB.v|
+!i113 1
+R6
+R7
+ntest_cam_@t@b
+vVGA_Driver
+R8
+!i10b 1
+!s100 zzSO3@`DgV8]ADcM??]^K3
+R1
+I2Rd]D?^B:iJ[SY3R_6MiI0
+R2
+R3
+w1604880556
+8D:/UNAL/semester7/Digital/camara/sources/VGA_driver.v
+FD:/UNAL/semester7/Digital/camara/sources/VGA_driver.v
+!i122 10
+L0 1 62
+R4
+r1
+!s85 0
+31
+R9
+!s107 D:/UNAL/semester7/Digital/camara/sources/VGA_driver.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/UNAL/semester7/Digital/camara/sources/VGA_driver.v|
+!i113 1
+R6
+R7
+n@v@g@a_@driver

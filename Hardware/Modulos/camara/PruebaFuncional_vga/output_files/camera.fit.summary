@@ -1,0 +1,16 @@
+Fitter Status : Failed - Sun Nov 08 17:38:52 2020
+Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Revision Name : camera
+Top-level Entity Name : test_cam
+Family : Cyclone IV E
+Device : EP4CE6E22C8
+Timing Models : Final
+Total logic elements : 161 / 6,272 ( 3 % )
+    Total combinational functions : 161 / 6,272 ( 3 % )
+    Dedicated logic registers : 54 / 6,272 ( < 1 % )
+Total registers : 54
+Total pins : 30 / 92 ( 33 % )
+Total virtual pins : 0
+Total memory bits : 393,216 / 276,480 ( 142 % )
+Embedded Multiplier 9-bit elements : 0 / 30 ( 0 % )
+Total PLLs : 1 / 2 ( 50 % )

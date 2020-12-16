@@ -1,0 +1,111 @@
+# Reading pref.tcl
+# do camera_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/UNAL/semester7/Digital/Digital_ii_proyecto/camara/sources/PLL {D:/UNAL/semester7/Digital/Digital_ii_proyecto/camara/sources/PLL/clk25_24_altera_cyclone_iv.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:11:54 on Nov 13,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/UNAL/semester7/Digital/Digital_ii_proyecto/camara/sources/PLL" D:/UNAL/semester7/Digital/Digital_ii_proyecto/camara/sources/PLL/clk25_24_altera_cyclone_iv.v 
+# -- Compiling module clk25_24_altera_cyclone_iv
+# 
+# Top level modules:
+# 	clk25_24_altera_cyclone_iv
+# End time: 12:11:54 on Nov 13,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/UNAL/semester7/Digital/Digital_ii_proyecto/camara/sources {D:/UNAL/semester7/Digital/Digital_ii_proyecto/camara/sources/VGA_driver.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:11:54 on Nov 13,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/UNAL/semester7/Digital/Digital_ii_proyecto/camara/sources" D:/UNAL/semester7/Digital/Digital_ii_proyecto/camara/sources/VGA_driver.v 
+# -- Compiling module VGA_Driver
+# 
+# Top level modules:
+# 	VGA_Driver
+# End time: 12:11:54 on Nov 13,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/UNAL/semester7/Digital/Digital_ii_proyecto/camara/sources {D:/UNAL/semester7/Digital/Digital_ii_proyecto/camara/sources/test_cam.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:11:54 on Nov 13,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/UNAL/semester7/Digital/Digital_ii_proyecto/camara/sources" D:/UNAL/semester7/Digital/Digital_ii_proyecto/camara/sources/test_cam.v 
+# -- Compiling module test_cam
+# 
+# Top level modules:
+# 	test_cam
+# End time: 12:11:54 on Nov 13,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/UNAL/semester7/Digital/Digital_ii_proyecto/camara/sources {D:/UNAL/semester7/Digital/Digital_ii_proyecto/camara/sources/cam_read.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:11:55 on Nov 13,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/UNAL/semester7/Digital/Digital_ii_proyecto/camara/sources" D:/UNAL/semester7/Digital/Digital_ii_proyecto/camara/sources/cam_read.v 
+# -- Compiling module cam_read
+# 
+# Top level modules:
+# 	cam_read
+# End time: 12:11:55 on Nov 13,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/UNAL/semester7/Digital/Digital_ii_proyecto/camara/sources {D:/UNAL/semester7/Digital/Digital_ii_proyecto/camara/sources/buffer_ram_dp.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:11:55 on Nov 13,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/UNAL/semester7/Digital/Digital_ii_proyecto/camara/sources" D:/UNAL/semester7/Digital/Digital_ii_proyecto/camara/sources/buffer_ram_dp.v 
+# -- Compiling module buffer_ram_dp
+# 
+# Top level modules:
+# 	buffer_ram_dp
+# End time: 12:11:55 on Nov 13,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/UNAL/semester7/Digital/Digital_ii_proyecto/camara/db {D:/UNAL/semester7/Digital/Digital_ii_proyecto/camara/db/clk25_24_altera_cyclone_iv_altpll.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:11:55 on Nov 13,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/UNAL/semester7/Digital/Digital_ii_proyecto/camara/db" D:/UNAL/semester7/Digital/Digital_ii_proyecto/camara/db/clk25_24_altera_cyclone_iv_altpll.v 
+# -- Compiling module clk25_24_altera_cyclone_iv_altpll
+# 
+# Top level modules:
+# 	clk25_24_altera_cyclone_iv_altpll
+# End time: 12:11:55 on Nov 13,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/UNAL/semester7/Digital/Digital_ii_proyecto/camara/simulation {D:/UNAL/semester7/Digital/Digital_ii_proyecto/camara/simulation/test_cam_TB.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:11:55 on Nov 13,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/UNAL/semester7/Digital/Digital_ii_proyecto/camara/simulation" D:/UNAL/semester7/Digital/Digital_ii_proyecto/camara/simulation/test_cam_TB.v 
+# -- Compiling module test_cam_TB
+# 
+# Top level modules:
+# 	test_cam_TB
+# End time: 12:11:55 on Nov 13,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  test_cam_TB
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" test_cam_TB 
+# Start time: 12:11:56 on Nov 13,2020
+# Loading work.test_cam_TB
+# Loading work.test_cam
+# Loading work.clk25_24_altera_cyclone_iv
+# Loading altera_mf_ver.altpll
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.pll_iobuf
+# Loading work.cam_read
+# Loading work.buffer_ram_dp
+# Loading work.VGA_Driver
+# Loading altera_mf_ver.MF_cycloneiii_pll
+# Loading altera_mf_ver.cda_m_cntr
+# Loading altera_mf_ver.cda_n_cntr
+# Loading altera_mf_ver.cda_scale_cntr
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 1000 ns
+#  Note : Cyclone IV E PLL locked to incoming clock
+# Time: 90000  Instance: test_cam_TB.uut.clk25_24.altpll_component.cycloneiii_pll.pll3
+# End time: 12:13:11 on Nov 13,2020, Elapsed time: 0:01:15
+# Errors: 0, Warnings: 0

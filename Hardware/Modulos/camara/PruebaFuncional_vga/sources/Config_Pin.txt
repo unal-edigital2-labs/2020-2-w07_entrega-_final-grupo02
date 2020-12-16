@@ -1,0 +1,40 @@
+######################  Core  ##############################################
+set_location_assignment	PIN_23	-to	clk
+###################################DVK601  ##################################
+#16I/Os_1 (Conexiones Camara)
+#set_location_assignment	PIN_58	-to	SDA	   
+#set_location_assignment	PIN_55	-to	SCL
+set_location_assignment	PIN_54	-to	CAM_href
+set_location_assignment	PIN_53	-to	CAM_vsync
+set_location_assignment	PIN_52	-to	CAM_xclk
+set_location_assignment	PIN_51	-to	CAM_pclk
+set_location_assignment	PIN_50	-to	CAM_px_data<6>
+set_location_assignment	PIN_49	-to	CAM_px_data<7>
+set_location_assignment	PIN_46	-to	CAM_px_data<4>
+set_location_assignment	PIN_44	-to	CAM_px_data<5>
+set_location_assignment	PIN_43	-to	CAM_px_data<2>
+set_location_assignment	PIN_42	-to	CAM_px_data<3>
+set_location_assignment	PIN_39	-to	CAM_px_data<0>
+set_location_assignment	PIN_38	-to	CAM_px_data<1>
+set_location_assignment	PIN_34	-to	CAM_pwdn
+set_location_assignment	PIN_33	-to	CAM_reset
+
+#32I/Os_1 (Conexiones VGA)
+set_location_assignment	PIN_111	-to	VGA_R<0>	   
+set_location_assignment	PIN_110	-to	VGA_R<1>
+set_location_assignment	PIN_106	-to	VGA_R<2>
+set_location_assignment	PIN_105	-to	VGA_R<3>
+set_location_assignment	PIN_104	-to	VGA_B<0>
+set_location_assignment	PIN_103	-to	VGA_B<1>
+set_location_assignment	PIN_101	-to	VGA_B<2>
+set_location_assignment	PIN_100	-to	VGA_B<3>
+set_location_assignment	PIN_99	-to	VGA_G<0>
+set_location_assignment	PIN_98	-to	VGA_G<1>
+set_location_assignment	PIN_87	-to	VGA_G<2>
+set_location_assignment	PIN_86	-to	VGA_G<3>
+set_location_assignment	PIN_85	-to	VGA_Hsync_n
+set_location_assignment	PIN_84	-to	VGA_Vsync_n
+
+#JOYSTICK
+set_location_assignment	rst	 -to	PIN_136
+set_location_assignment	CAM_btn 	 -to	PIN_142

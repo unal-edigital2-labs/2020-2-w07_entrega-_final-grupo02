@@ -1,0 +1,70 @@
+# Current time Sun Nov 08 19:41:05 2020
+# ModelSim - Intel FPGA Edition Stack Trace
+# Program = vish
+# Id = "2020.1"
+# Version = "2020.02"
+# Date = "Feb 28 2020"
+# Platform = win32pe
+
+Exception c0000005 has occurred at address 005c97b8. Traceback:
+# 0    0x005c97b8: 'WinMain + 0x70428'
+# 1    0x005c9fec: 'WinMain + 0x70c5c'
+# 2    0x005c96d3: 'WinMain + 0x70343'
+# 3    0x005c964e: 'WinMain + 0x702be'
+# 4    0x005ea234: 'WinMain + 0x90ea4'
+# 5    0x005e8ee4: 'WinMain + 0x8fb54'
+# 6    0x61c639f1: 'TclNREvalObjv + 0x3e1'
+StackWalk failed 299
+# End of Stack Trace
+
+# Current time Sun Nov 08 19:41:06 2020
+# ModelSim - Intel FPGA Edition Stack Trace
+# Program = vish
+# Id = "2020.1"
+# Version = "2020.02"
+# Date = "Feb 28 2020"
+# Platform = win32pe
+
+Exception c0000005 has occurred at address 005c97b8. Traceback:
+# 0    0x005c97b8: 'WinMain + 0x70428'
+# 1    0x005ea0c5: 'WinMain + 0x90d35'
+# 2    0x005ea25e: 'WinMain + 0x90ece'
+# 3    0x005e8ee4: 'WinMain + 0x8fb54'
+# 4    0x61c639f1: 'TclNREvalObjv + 0x3e1'
+StackWalk failed 299
+# End of Stack Trace
+
+# Current time Sun Nov 08 19:41:06 2020
+# ModelSim - Intel FPGA Edition Stack Trace
+# Program = vish
+# Id = "2020.1"
+# Version = "2020.02"
+# Date = "Feb 28 2020"
+# Platform = win32pe
+
+Exception c0000005 has occurred at address 005c97b8. Traceback:
+# 0    0x005c97b8: 'WinMain + 0x70428'
+# 1    0x005ea0c5: 'WinMain + 0x90d35'
+# 2    0x005ea25e: 'WinMain + 0x90ece'
+# 3    0x005e8ee4: 'WinMain + 0x8fb54'
+# 4    0x61c639f1: 'TclNREvalObjv + 0x3e1'
+StackWalk failed 299
+# End of Stack Trace
+
+# Current time Sun Nov 08 19:41:06 2020
+# ModelSim - Intel FPGA Edition Stack Trace
+# Program = vish
+# Id = "2020.1"
+# Version = "2020.02"
+# Date = "Feb 28 2020"
+# Platform = win32pe
+
+Exception c0000005 has occurred at address 005c97b8. Traceback:
+# 0    0x005c97b8: 'WinMain + 0x70428'
+# 1    0x005ea0c5: 'WinMain + 0x90d35'
+# 2    0x005ea25e: 'WinMain + 0x90ece'
+# 3    0x005e8ee4: 'WinMain + 0x8fb54'
+# 4    0x61c639f1: 'TclNREvalObjv + 0x3e1'
+StackWalk failed 299
+# End of Stack Trace
+
