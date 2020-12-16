@@ -10,7 +10,3 @@ _Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios
 * **Maicol Douglas Fontecha Diaz** - mdfontechad@unal.edu.co
 
 
-
-
----
-⌨️ con ❤️ por [Villanuevand](https://github.com/Villanuevand) 😊
