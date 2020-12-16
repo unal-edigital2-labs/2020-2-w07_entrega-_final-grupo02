@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Tue Dec 15 08:44:57 2020
+# Process ID: 42564
+# Current directory: /home/maicol/Escritorio/Project/Proyecto/build/nexys4ddr/gateware
+# Command line: vivado -mode batch -source nexys4ddr.tcl
+# Log file: /home/maicol/Escritorio/Project/Proyecto/build/nexys4ddr/gateware/vivado.log
+# Journal file: /home/maicol/Escritorio/Project/Proyecto/build/nexys4ddr/gateware/vivado.jou
+#-----------------------------------------------------------
+source nexys4ddr.tcl

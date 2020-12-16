@@ -1,0 +1,52 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (lin64) Build 2902540 Wed May 27 19:54:35 MDT 2020
+| Date         : Tue Dec 15 10:40:12 2020
+| Host         : maicol-B450M-DS3H running 64-bit Ubuntu 20.04.1 LTS
+| Command      : report_utilization -hierarchical -file nexys4ddr_utilization_hierarchical_place.rpt
+| Design       : nexys4ddr
+| Device       : 7a100tcsg324-1
+| Design State : Fully Placed
+-----------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++------------------------+-------------------------+------------+------------+---------+------+------+--------+--------+------------+
+|        Instance        |          Module         | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | DSP Blocks |
++------------------------+-------------------------+------------+------------+---------+------+------+--------+--------+------------+
+| nexys4ddr              |                   (top) |       4074 |       3938 |     136 |    0 | 3395 |    134 |      0 |          1 |
+|   (nexys4ddr)          |                   (top) |       1236 |       1188 |      48 |    0 | 1979 |    134 |      0 |          1 |
+|   bloquePWM            |               bloquePWM |         30 |         30 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     DivisorF           |              DivFreqPWM |          5 |          5 |       0 |    0 |   14 |      0 |      0 |          0 |
+|     MaquinaEstadosPWM1 |       MaquinaEstadosPWM |          5 |          5 |       0 |    0 |    2 |      0 |      0 |          0 |
+|     pwm1               |                     PWM |         21 |         21 |       0 |    0 |   16 |      0 |      0 |          0 |
+|   bloqueultrasonido    |       bloqueultrasonido |         51 |         51 |       0 |    0 |   79 |      0 |      0 |          0 |
+|     maquinadeestados0  |        maquinadeestados |          6 |          6 |       0 |    0 |   15 |      0 |      0 |          0 |
+|       divisorfrecme0   |           divisorfrecme |          5 |          5 |       0 |    0 |   13 |      0 |      0 |          0 |
+|       meultrasonido0   |           meultrasonido |          1 |          1 |       0 |    0 |    2 |      0 |      0 |          0 |
+|     ultrasonido0       |             ultrasonido |         45 |         45 |       0 |    0 |   64 |      0 |      0 |          0 |
+|       contador0        |                contador |          9 |          9 |       0 |    0 |   10 |      0 |      0 |          0 |
+|       divisor0         |                 divisor |          2 |          2 |       0 |    0 |   16 |      0 |      0 |          0 |
+|       divisorfrec0     |             divisorfrec |          5 |          5 |       0 |    0 |   13 |      0 |      0 |          0 |
+|       divisorfrecd0    |            divisorfrecd |         15 |         15 |       0 |    0 |   12 |      0 |      0 |          0 |
+|       divisorfrecgen0  |          divisorfrecgen |         12 |         12 |       0 |    0 |   11 |      0 |      0 |          0 |
+|       genpulsos0       |               genpulsos |          2 |          2 |       0 |    0 |    2 |      0 |      0 |          0 |
+|   imageProcess         |            imageProcess |        225 |        225 |       0 |    0 |  175 |      0 |      0 |          0 |
+|     (imageProcess)     |            imageProcess |        225 |        225 |       0 |    0 |  175 |      0 |      0 |          0 |
+|     clk25_24           |         clk24_25_nexys4 |          0 |          0 |       0 |    0 |    0 |      0 |      0 |          0 |
+|       inst             | clk24_25_nexys4_clk_wiz |          0 |          0 |       0 |    0 |    0 |      0 |      0 |          0 |
+|   picorv32             |                picorv32 |       2532 |       2444 |      88 |    0 | 1130 |      0 |      0 |          0 |
+|     (picorv32)         |                picorv32 |       1843 |       1755 |      88 |    0 |  675 |      0 |      0 |          0 |
+|     pcpi_div           |       picorv32_pcpi_div |        448 |        448 |       0 |    0 |  200 |      0 |      0 |          0 |
+|     pcpi_mul           |       picorv32_pcpi_mul |        241 |        241 |       0 |    0 |  255 |      0 |      0 |          0 |
++------------------------+-------------------------+------------+------------+---------+------+------+--------+--------+------------+
+* Note: The sum of lower-level cells may be larger than their parent cells total, due to cross-hierarchy LUT combining
+
+
