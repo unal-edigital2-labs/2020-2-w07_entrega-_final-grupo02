@@ -10,7 +10,7 @@ _Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios
 * **Maicol Douglas Fontecha Diaz** - mdfontechad@unal.edu.co
 * **Andres Cardenas Peñuela** - ancardenas@unal.edu.co
 * **Valentine Muodum** - vmuodum@unal.edu.co
-
+* **Andres Camilo Unibio Barbosa** - acunibiob@unal.edu.co
 
 ## Sistem on Chip
 
