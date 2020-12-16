@@ -1,13 +1,2 @@
-# Instrucciones
-
-En el archivo ~camara/sources/buffer_ram_dp.v pongan la *dirección absoluta* de imagen.men que se encuentra en ~camara\sources\, en la siguiente linea de código:
-
-```verilog
-
-8 parameter imageFILE = "... /camara/sources/imagen.men")
-
-```
-
-Asegúrense se cambiar los *backslash* en los que Windows proporciona las direcciones por *slash*.
-
-En el [vga-simulator](https://ericeastwood.com/lab/vga-simulator/) se puede subir el archivo test_cam.txt para verificar simulaciones.
+# Desarrollo de la cámara
+El presente modulo no fue integrado al procesador puesto que era solo para observar el correcto funcionamiento de la camara, las imagenes que se ponen en la presente carpeta fueron las tomadas con la camara, gracias a la configuración mostrada (el i2c se realizó mediante arduino). Luego hubieron dificultades ya que la cámara tomaba una imagen bastante oscura, probamos varias configuraciones, pero la otra que funcionó mostraba un ruido demasiado grande como para ser considerada, así pues, la primera configuración tomaba bien el color si se le ponía muy buena iluminación al objeto, luego nos quedamos con esa.
