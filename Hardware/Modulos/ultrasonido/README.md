@@ -14,10 +14,11 @@
  Para realizar la tarea de deteccion y calculo de distancia dada una orden se necesitan 2 modulos principales. El primero es un contador y el segundo 
  es un generador de pulsos PWM, cada uno funcionando con un reloj especial para interpretar cada ciclo de reloj como distancia o tiempo de encendido. 
  Estos dos modulos son controlados por una maquina de estados que transforma la variable "orden" en la combinaciones de las variables reset y ENABLE
- que son explicadas a detalle mas adelante. Para entender el funcionamiento de cada modulo adecuadamente se recomienda previamente revisar el datasheet 
- del sensor HC-SR04.
+ usadas para el funcionamiento de estos 2 modulos que son explicadas a detalle mas adelante. Para entender el funcionamiento de cada modulo adecuadamente 
+ se recomienda previamente revisar el datasheet  del sensor HC-SR04.
  
- ### Modulo Contador (contador.v)
+ ### Modulo Contador ("contador.v")
+ 
  
  Este modulo tiene 2 funciones, activar la generacion de un pulso PWM que hara funcionar al sensor de ultrasonido dada una orden y calcular la distancia 
  haciendo uso del sensor y su propio reloj. Este modulo cuanta con una señal de reset que deberá ser activada una vez la distancia haya sido calculada con 
@@ -27,10 +28,9 @@
  centimetros haciendo uso de  la velocidad del sonido y la distancia que  recorre tanto de ida como de vuelta la señal enviada por el ultrasonido, de manera
  que para calcular distancia basta solo con contar los ciclos de reloj desde que la señal ECHO ha sido activada hasta que se encuentre de nuevo en 0. 
  Mediante uso de variables de estado  (por ejemplo "logico") se puede determinar cuando el sensor ha terminado de calcular la distancia para finalmente 
- entregarla al Software junto a una señal de 
- done para poder realizar la tarea de mapeo.
+ entregarla al Software junto a una señal de  done para poder realizar la tarea de mapeo.
  
- ### Modulo Generador de pulsos (genpulsos.v)
+ ### Modulo Generador de pulsos ("genpulsos.v")
  
  
  Este modulo tiene como unica función generador un pwm de 10 microsegundos en alto  activado por la orden del modulo contador. Este modulo cuenta con una unica 
@@ -42,5 +42,8 @@
  con una señal de reset que inicializa todas la variables en 0 con el fin de poder generar otro pulso (una vez generado un pulso la unica manera de generar otro es 
  mediante la variable reset debido a la arquitectura usada).
  
- ### Modulo 
+ El bloque general ultrasonido ("bloqueultrasonido.v") tambien cuenta con otros bloques destinados a el funcionamiento de la maquina de estados y a los 2 modulos 
+ explicados anteriormente, sin embargo estos modulos son simples divisores de frecuencia que funcionan manteniendo una variable en nivel alto durante n ciclos de un
+ reloj principal para luego invertirla durante otros n ciclos de reloj (la cuenta de los ciclos se lleva en una variable auxiliar) , la variable n dependera de la 
+ frecuencia del reloj principal y la del reloj deseado. Por otr
  
