@@ -1,4 +1,3 @@
-# Infrarojos
+# UART2 (bluetooth)
 
-El SoC usado incluía el periferico de GPIO, luego no hubo mayor problema para implementarlos luego para reducir gastos (dado que no se hizo la parte mecánica) solo se compró un infrarojo fisico, los otros dos infrarojos se representaron con dos swtich's, que para efectos teoricos funcionan igual.
-
+El SoC usado incluía modulo UART, luego el trabajo era solo integrarlo y enviar los caracteres deseados, para esto se uso el modulo bluetooth Hc-06 en su configuración por defecto de 9600 baudios. 
