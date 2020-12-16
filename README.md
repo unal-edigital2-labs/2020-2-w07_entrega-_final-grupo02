@@ -5,7 +5,6 @@ El presente proyecto tuvo como fin la creación de un robot el cual fuera capaz 
 
 ## Autores ✒️
 
-_Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
 
 * **Maicol Douglas Fontecha Diaz** - mdfontechad@unal.edu.co
 * **Andres Cardenas Peñuela** - ancardenas@unal.edu.co
