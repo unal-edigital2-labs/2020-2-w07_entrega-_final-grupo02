@@ -71,5 +71,5 @@ También puede deberse a que haya cierto ruido externo que provoque una incorrec
 ```
 
 ```
-Dado que no se tuvo el procesamiento de imagen esperado, no se incluyo en la resolución del laberinto (sin embargo el codigo software se hizo y quedó comentando en main.c)
+Dado que no se tuvo el procesamiento de imagen esperado, no se incluyó en la resolución del laberinto (sin embargo el codigo software se hizo y quedó comentando en main.c)
 ```
