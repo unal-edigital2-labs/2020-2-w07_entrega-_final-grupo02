@@ -9,4 +9,10 @@
  se hara uso del ultrasonido para identificar la presencia de 3 paredes (izquierda, centro y derecha relativo a la posicion a donde mira el robot)
  ya que la de atras se supone que es de donde vino y por ende no hay pared.
  
+ ## Descripcion de Hardware
+ 
+ Para realizar la tarea de deteccion y calculo de distancia dada una orden se necesitan 2 modulos principales. El primero es un contador y el segundo 
+ es un generador de pulsos PWM, cada uno funcionando con un reloj especial para interpretar cada ciclo de reloj como distancia o tiempo de encendido.
+ 
+ ### a
  
