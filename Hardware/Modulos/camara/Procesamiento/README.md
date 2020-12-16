@@ -1,105 +1,75 @@
-# Entrega Final - Proyecto Digital 2.
+# Procesamiento
 
-El presente proyecto tuvo como fin la creación de un robot el cual fuera capaz de recorrer un laberinto desconocido, caracterizarlo, encontrar "objetos valiosos", salir del laberinto y finalmente enviar la información encontrada via bluetooth. Para su desarrollo fue necesaria la creación de varios modulos individuales con verilog, así como la implentación de la arquitectura Risc-V,su bus de datos, mapa de memoria y unión de los modulos en el SoC, todo esto con ayuda de LiTex. Por ultimo, el software necesario para que el robot resolviera se realizó compilación cruazada con el lenguaje de programación C.
+(FORMATO XRGB444 QCIF).
 
-## Comenzando 🚀
-
-_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
-
-Mira **Deployment** para conocer como desplegar el proyecto.
+Para el presente modulo se partió de la idea de tomar una sola foto y analizarla directamente en el hardware, la maquina de estados para el procesamiento se muestra en una de las imagenes.
 
 
-### Pre-requisitos 📋
-
-_Que cosas necesitas para instalar el software y como instalarlas_
-
+## Maquina de estados para tomar una foto:
 ```
-Da un ejemplo
+INIT es un estado donde se espera que la imagen inicie, es decir, aparezca un vref,lo que indica que una nueva imagen está a punto de ser capturada.
+```
+BYTE1 es el estado que espera a que lleguen los href, lo que quiere decir que se comienza a capturar los datos de la fila.
+```
+Byte2 será donde se cuenten los pixeles de las filas
 ```
 
-### Instalación 🔧
+Ahora de Byte 2 se pasa a Byte 1 si vref y href son 0, lo que indica que se acabó lo capturado en la presente fila,luego hay que cambiar a la siguiente, quedandonos a la espera de otro href.
 
-_Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
+Finalmente, si detectamos de nuevo que hay un vref, significaría que se acabó la imagen, luego hemos tomado una foto.
 
-_Dí cómo será ese paso_
+##Procesamiento
 
-```
-Da un ejemplo
-```
-
-_Y repite_
+Con base en lo anterior se planteó el procesar la imagen comparando el ancho de cada fila(siendo esta de un color de interes), luego
+el hardware subido hace lo siguiente:
 
 ```
-hasta finalizar
+1. Espera que se detecte un color de nuestro interes en Byte2. Cuando lo cuenta,determina que color domina, y con esto crea un contador de ancho actual, sumando todos los pixeles seguidos que también sean de nuestro interes dentro de esa fila.
 ```
 
-_Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
-
-## Ejecutando las pruebas ⚙️
-
-_Explica como ejecutar las pruebas automatizadas para este sistema_
-
-### Analice las pruebas end-to-end 🔩
-
-_Explica que verifican estas pruebas y por qué_
-
 ```
-Da un ejemplo
+2. Cuando deje de detectar colores de nuestro interes, dejara de contar y guardará el ancho actual en otro registro llamado "ancho anterior". 
 ```
 
-### Y las pruebas de estilo de codificación ⌨️
-
-_Explica que verifican estas pruebas y por qué_
-
 ```
-Da un ejemplo
+3. En la siguiente fila contará de nuevo el ancho actual, y al finalizarla  comparará el ancho actual con el ancho anterior
 ```
 
-## Despliegue 📦
+```
+4. De esta comparación saldrán 3 resultados posibles: Un contador de anchos mayores, un contador de anchos menores y un contador de anchos iguales
+```
 
-_Agrega notas adicionales sobre como hacer deploy_
+```
+5. Con esta información en software, no es muy dificil determinar si la figura fue un cuadrado, un circulo o un triangulo.
+```
 
-## Construido con 🛠️
+##Simulaciones
 
-_Menciona las herramientas que utilizaste para crear tu proyecto_
+También se hicieron un par de simulaciones POST-SYNTESIS que parecian mostrar que el hardware funcionaria correctamente:
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - El framework web usado
-* [Maven](https://maven.apache.org/) - Manejador de dependencias
-* [ROME](https://rometools.github.io/rome/) - Usado para generar RSS
+```
+simulación cuadrado: Se puso en el test bench un solo color (Verde) y como se esperaba, el contador de anchos iguales fue 119, lo cual nos diría claramente que es un cuadrado. 
+```
 
-## Contribuyendo 🖇️
+```
+simulación triangulo: En este test bench se simulo un color que iba aumentando varios pixeles de ancho en cada fila, luego en la imagen se puede ver que detecta  77 anchos mayores, y el resto de anchos iguales (pues al final el ancho aumentó hasta salirse de la pantalla).
+```
 
-Por favor lee el [CONTRIBUTING.md](https://gist.github.com/villanuevand/xxxxxx) para detalles de nuestro código de conducta, y el proceso para enviarnos pull requests.
+##Resultados
 
-## Wiki 📖
+Al unirlo con el procesador y poniendo hubieron problemas puesto que no determinaba de una manera correcta el color. No fue posible solucionar esto en el transcurso del semestre, pues no logramos determinar si era un problema de sincronización del hardware o un problema de la camara como tal.
+Lo único que se pudo hacer fue conectar directamente : 11110000, y 00001111 (prueba básica.PNG) en lugar de los pines de la camara, esto resulto, efectivamente en lo esperado,pues como se ve en prueba básica 1 y 2 .PNG, el hardware es capaz de reconocer que está entrando solo verde, o azul y rojo (FORMATO XRGB444 QCIF).
 
-Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra [Wiki](https://github.com/tu/proyecto/wiki)
+##Conclusión
 
-## Versionado 📌
+```
+El error puede ser debido a que esperamos una imagen muy perfecta de la camara, lo cual evidentemente no se puede obtener.
+```
 
-Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones disponibles, mira los [tags en este repositorio](https://github.com/tu/proyecto/tags).
+```
+También puede deberse a que haya cierto ruido externo que provoque una incorrecta captura de datos
+```
 
-## Autores ✒️
-
-_Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
-
-* **Andrés Villanueva** - *Trabajo Inicial* - [villanuevand](https://github.com/villanuevand)
-* **Fulanito Detal** - *Documentación* - [fulanitodetal](#fulanito-de-tal)
-
-También puedes mirar la lista de todos los [contribuyentes](https://github.com/your/project/contributors) quíenes han participado en este proyecto. 
-
-## Licencia 📄
-
-Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
-
-## Expresiones de Gratitud 🎁
-
-* Comenta a otros sobre este proyecto 📢
-* Invita una cerveza 🍺 o un café ☕ a alguien del equipo. 
-* Da las gracias públicamente 🤓.
-* etc.
-
-
-
----
-⌨️ con ❤️ por [Villanuevand](https://github.com/Villanuevand) 😊
+```
+Dado que no se tuvo el procesamiento de imagen esperado, no se incluyo en la resolución del laberinto (sin embargo el codigo software se hizo y quedó comentando en main.c)
+```
