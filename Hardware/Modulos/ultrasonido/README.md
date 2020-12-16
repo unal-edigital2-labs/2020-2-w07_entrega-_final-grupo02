@@ -45,5 +45,5 @@
  El bloque general ultrasonido ("bloqueultrasonido.v") tambien cuenta con otros bloques destinados a el funcionamiento de la maquina de estados y a los 2 modulos 
  explicados anteriormente, sin embargo estos modulos son simples divisores de frecuencia que funcionan manteniendo una variable en nivel alto durante n ciclos de un
  reloj principal para luego invertirla durante otros n ciclos de reloj (la cuenta de los ciclos se lleva en una variable auxiliar) , la variable n dependera de la 
- frecuencia del reloj principal y la del reloj deseado. Por otr
+ frecuencia del reloj principal y la del reloj deseado.
  
