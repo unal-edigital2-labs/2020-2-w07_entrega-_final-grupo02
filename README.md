@@ -10,7 +10,7 @@ El presente proyecto tuvo como fin la creación de un robot el cual fuera capaz 
 * **Valentine Muodum** - vmuodum@unal.edu.co
 * **Andres Camilo Unibio Barbosa** - acunibiob@unal.edu.co
 
-## Funcionalidad, Diseño.
+## Diseño y funcionalidad.
 
 ## Videos  
 En cada carpeta de modulos hay un video de cada prueba funcional individual, el video que muestra la resolucón del laberitno completo se encuentra en: 
