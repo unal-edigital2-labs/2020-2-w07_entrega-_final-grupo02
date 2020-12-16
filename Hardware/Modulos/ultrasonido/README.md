@@ -19,16 +19,26 @@
  
  Este modulo tiene 2 funciones, activar la generacion de un pulso PWM que hara funcionar al sensor de ultrasonido dada una orden y calcular la distancia 
  haciendo uso del sensor y su propio reloj. Este modulo cuanta con una señal de reset que deberá ser activada una vez la distancia haya sido calculada con 
- el objetivo de limpiar las variables de estado y asi poder calcular una nueva distancia. La señal ENABLE ("orden"), se encargara de activar la  generación del pulso
- PWM (señal pulse), e indirectamente de activar la señal ECHO, esta ultima permanecera encendida hasta recibir los pulsos emitidos por el sensor cuando se dio la señal 
- ENABLE inicialmente. El reloj de este modulo es especial ya que se diseño de tal forma de que transforma cada ciclo de reloj en centimetros haciendo uso de 
- la velocidad del sonido y la distancia que  recorre tanto de ida como de vuelta la señal enviada por el ultrasonido, de manera que para calcular distancia
- basta solo con contar los ciclos de reloj desde que la señal ECHO ha sido activada hasta que se encuentre de nuevo en 0. Mediante uso de variables de estado 
- (por ejemplo "logico") se puede determinar cuando el sensor ha terminado de calcular la distancia para finalmente entregarla al Software junto a una señal de 
+ el objetivo de limpiar las variables de estado y asi poder calcular una nueva distancia. La señal ENABLE ("orden"), se encargara de activar la  generación 
+ del pulso PWM (señal pulse), e indirectamente de activar la señal ECHO, esta ultima permanecera encendida hasta recibir los pulsos emitidos por el sensor 
+ cuando se dio la señal  ENABLE inicialmente. El reloj de este modulo es especial ya que se diseño de tal forma de que transforma cada ciclo de reloj en 
+ centimetros haciendo uso de  la velocidad del sonido y la distancia que  recorre tanto de ida como de vuelta la señal enviada por el ultrasonido, de manera
+ que para calcular distancia basta solo con contar los ciclos de reloj desde que la señal ECHO ha sido activada hasta que se encuentre de nuevo en 0. 
+ Mediante uso de variables de estado  (por ejemplo "logico") se puede determinar cuando el sensor ha terminado de calcular la distancia para finalmente 
+ entregarla al Software junto a una señal de 
  done para poder realizar la tarea de mapeo.
  
  ### Modulo Generador de pulsos (genpulsos.v)
  
  
+ Este modulo tiene como unica función generador un pwm de 10 microsegundos en alto  activado por la orden del modulo contador. Este modulo cuenta con una unica 
+ salida llamada trigg dirigida a la entrada TRIGGER del sensor de ultrasonido (señal que necesita para activarse como su nombre lo indica). El modulo funciona 
+ gracias a un reloj de una periodicidad de 10 microsegundos y 2 variables de estado que controlan el PWM de salida (indican cuando hay que subir y bajar de nivel
+ el pulso para ser mas precisos). Al recibir la señal proveniente del modulo de contador ("pulse"), una de las variables de estado se activa durante un ciclo de 
+ reloj  dando lugar a la activacion del pulso de salida, en el siguiente ciclo un condicional se encarga de activar la otra variable de estado para forzar la 
+ bajada de la señal  bajo ciertas condiciones (esto para idependizar la duracion del pulso de la duracion de la señal de habilitacion). Este modulo tambien cuenta
+ con una señal de reset que inicializa todas la variables en 0 con el fin de poder generar otro pulso (una vez generado un pulso la unica manera de generar otro es 
+ mediante la variable reset debido a la arquitectura usada).
  
+ ### Modulo 
  
