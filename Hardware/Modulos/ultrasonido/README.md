@@ -13,7 +13,7 @@
  
  Para realizar la tarea de deteccion y calculo de distancia dada una orden se necesitan 2 modulos principales. El primero es un contador y el segundo 
  es un generador de pulsos PWM, cada uno funcionando con un reloj especial para interpretar cada ciclo de reloj como distancia o tiempo de encendido.
- Para enetender cada modulo adecuadamente se recomienda previamente revisar el datasheet del sensor HC-SR04.
+ Para entender el funcionamiento de cada modulo adecuadamente se recomienda previamente revisar el datasheet del sensor HC-SR04.
  
  ### Modulo Contador 
  
