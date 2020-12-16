@@ -1,4 +1,4 @@
-# Procesamiento
+# Image process
 
 (FORMATO XRGB444 QCIF).
 
