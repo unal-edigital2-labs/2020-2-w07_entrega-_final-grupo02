@@ -33,17 +33,17 @@
  ### Modulo Generador de pulsos ("genpulsos.v")
  
  
- Este modulo tiene como unica función generador un pwm de 10 microsegundos en alto  activado por la orden del modulo contador. Este modulo cuenta con una unica 
- salida llamada trigg dirigida a la entrada TRIGGER del sensor de ultrasonido (señal que necesita para activarse como su nombre lo indica). El modulo funciona 
- gracias a un reloj de una periodicidad de 10 microsegundos y 2 variables de estado que controlan el PWM de salida (indican cuando hay que subir y bajar de nivel
- el pulso para ser mas precisos). Al recibir la señal proveniente del modulo de contador ("pulse"), una de las variables de estado se activa durante un ciclo de 
- reloj  dando lugar a la activacion del pulso de salida, en el siguiente ciclo un condicional se encarga de activar la otra variable de estado para forzar la 
- bajada de la señal  bajo ciertas condiciones (esto para idependizar la duracion del pulso de la duracion de la señal de habilitacion). Este modulo tambien cuenta
- con una señal de reset que inicializa todas la variables en 0 con el fin de poder generar otro pulso (una vez generado un pulso la unica manera de generar otro es 
+ Este módulo tiene como única función generar un PWM de 10 microsegundos en alto  activado por la órden del módulo contador. Este módulo cuenta con una única 
+ salida llamada "trigg" dirigida a la entrada TRIGGER del sensor de ultrasonido, (señal que necesita para activarse como su nombre lo indica). El módulo funciona 
+ gracias a un reloj de una periodicidad de 10 microsegundos y 2 variables de estado que controlan el PWM de salida, (indican cuando hay que subir y bajar de nivel
+ el pulso para ser mas precisos). Al recibir la señal proveniente del módulo contador, ("pulse"), una de las variables de estado se activa durante un ciclo de 
+ reloj  dando lugar a la activación del pulso de salida, en el siguiente ciclo un condicional se encarga de activar la otra variable de estado para forzar la 
+ bajada de la señal  bajo ciertas condiciones, (esto para independizar la duración del pulso de la duración de la señal de habilitacion). Este modulo tambien cuenta
+ con una señal de reset que inicializa todas la variables en 0 con el fin de poder generar otro pulso, (una vez generado un pulso la única manera de generar otro es 
  mediante la variable reset debido a la arquitectura usada).
  
- El bloque general ultrasonido ("bloqueultrasonido.v") tambien cuenta con otros bloques destinados a el funcionamiento de la maquina de estados y a los 2 modulos 
- explicados anteriormente, sin embargo estos modulos son simples divisores de frecuencia que funcionan manteniendo una variable en nivel alto durante n ciclos de un
- reloj principal para luego invertirla durante otros n ciclos de reloj (la cuenta de los ciclos se lleva en una variable auxiliar) , la variable n dependera de la 
- frecuencia del reloj principal y la del reloj deseado.
+ El bloque general ultrasonido, ("bloqueultrasonido.v"), tambien cuenta con otros bloques destinados al funcionamiento de la máquina de estados y a los 2 módulos 
+ explicados anteriormente; sin embargo, estos módulos son simples divisores de frecuencia que funcionan manteniendo una variable en nivel alto durante n ciclos de un
+ reloj principal para luego invertirla durante otros n ciclos de reloj, (la cuenta de los ciclos transcurridos se lleva en una variable auxiliar), la variable n dependerá
+ de la  frecuencia del reloj principal y la del reloj deseado.
  
