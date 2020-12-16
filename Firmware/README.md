@@ -8,10 +8,10 @@ A grandes rasgos, en primer lugar se hizo un Struct de 4x4, donde cada posición
 
 ### Evaluarpunto()
 La cual como dice su nombre evalua el punto actual, en esta función se tiene en cuenta: 
-   -Si se detectaron 3 infrarojos con el fin de enviarle al arduino si se debe o no detener.
-   -Si está detenido, esta función se encarga de mover el servomotor para el lugar que se quiera.
-   -Hacer que el ultrasonido obtenga la distancia al siguiente punto
-   -con MtxAssign() se caracteriza el punto correspondiente.
+  * Si se detectaron 3 infrarojos con el fin de enviarle al arduino si se debe o no detener.
+  * Si está detenido, esta función se encarga de mover el servomotor para el lugar que se quiera.
+  * Hacer que el ultrasonido obtenga la distancia al siguiente punto
+  * con MtxAssign() se caracteriza el punto correspondiente.
 
 Si el procesamiento de imagen hubiese funcionado adecuadamente, en esta función también iría la funcion ImageProcess(), para determinar la figura y asignarlo en la matriz.
 
