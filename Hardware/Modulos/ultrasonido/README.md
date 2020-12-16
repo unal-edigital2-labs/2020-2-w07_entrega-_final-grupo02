@@ -27,7 +27,7 @@
  (por ejemplo "logico") se puede determinar cuando el sensor ha terminado de calcular la distancia para finalmente entregarla al Software junto a una señal de 
  done para poder realizar la tarea de mapeo.
  
- ### Modulo Generador de pulsos (gesnpulsos.v)
+ ### Modulo Generador de pulsos (genpulsos.v)
  
  
  
