@@ -41,5 +41,5 @@ El ultra sonido mediante un driver en hardware inicializa la medicion de la dist
 
 
 ## Videos  
-En cada carpeta de modulos hay un video de cada prueba funcional individual, el video que muestra la resultado del laberitno completo se encuentra en: 
+En cada carpeta de modulos hay un video de cada prueba funcional individual, el video que muestra la resolucón del laberitno completo se encuentra en: 
 https://www.youtube.com/watch?v=Pdu0hr4bE8M&feature=youtu.be&ab_channel=Maicolfontechadiaz
