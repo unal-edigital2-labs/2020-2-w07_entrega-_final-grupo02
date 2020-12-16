@@ -14,5 +14,8 @@
  Para realizar la tarea de deteccion y calculo de distancia dada una orden se necesitan 2 modulos principales. El primero es un contador y el segundo 
  es un generador de pulsos PWM, cada uno funcionando con un reloj especial para interpretar cada ciclo de reloj como distancia o tiempo de encendido.
  
- ### a
+ ### Modulo Contador 
+ 
+ Este modulo tiene 2 funciones, activar la generacion de un pulso PWM que hara funcionar al sensor de ultrasonido dada una orden y calcular la distancia 
+ despues de mandado el pulso mediante la señal ECHO dada por el sensor
  
