@@ -15,7 +15,7 @@
  es un generador de pulsos PWM, cada uno funcionando con un reloj especial para interpretar cada ciclo de reloj como distancia o tiempo de encendido.
  Para entender el funcionamiento de cada modulo adecuadamente se recomienda previamente revisar el datasheet del sensor HC-SR04.
  
- ### Modulo Contador 
+ ### Modulo Contador (contador.v)
  
  Este modulo tiene 2 funciones, activar la generacion de un pulso PWM que hara funcionar al sensor de ultrasonido dada una orden y calcular la distancia 
  haciendo uso del sensor y su propio reloj. Este modulo cuanta con una señal de reset que deberá ser activada una vez la distancia haya sido calculada con 
@@ -27,6 +27,8 @@
  (por ejemplo "logico") se puede determinar cuando el sensor ha terminado de calcular la distancia para finalmente entregarla al Software junto a una señal de 
  done para poder realizar la tarea de mapeo.
  
- ### Modulo 
+ ### Modulo Generador de pulsos (gesnpulsos.v)
+ 
+ 
  
  
