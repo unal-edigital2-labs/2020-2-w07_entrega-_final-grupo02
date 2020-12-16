@@ -18,7 +18,7 @@ Ahora de Byte 2 se pasa a Byte 1 si vref y href son 0, lo que indica que se acab
 
 Finalmente, si detectamos de nuevo que hay un vref, significaría que se acabó la imagen, luego hemos tomado una foto.
 
-##Procesamiento
+## Procesamiento
 
 Con base en lo anterior se planteó el procesar la imagen comparando el ancho de cada fila(siendo esta de un color de interes), luego
 el hardware subido hace lo siguiente:
@@ -43,7 +43,7 @@ el hardware subido hace lo siguiente:
 5. Con esta información en software, no es muy dificil determinar si la figura fue un cuadrado, un circulo o un triangulo.
 ```
 
-##Simulaciones
+## Simulaciones
 
 También se hicieron un par de simulaciones POST-SYNTESIS que parecian mostrar que el hardware funcionaria correctamente:
 
@@ -55,12 +55,12 @@ simulación cuadrado: Se puso en el test bench un solo color (Verde) y como se e
 simulación triangulo: En este test bench se simulo un color que iba aumentando varios pixeles de ancho en cada fila, luego en la imagen se puede ver que detecta  77 anchos mayores, y el resto de anchos iguales (pues al final el ancho aumentó hasta salirse de la pantalla).
 ```
 
-##Resultados
+## Resultados
 
 Al unirlo con el procesador y poniendo hubieron problemas puesto que no determinaba de una manera correcta el color. No fue posible solucionar esto en el transcurso del semestre, pues no logramos determinar si era un problema de sincronización del hardware o un problema de la camara como tal.
 Lo único que se pudo hacer fue conectar directamente : 11110000, y 00001111 (prueba básica.PNG) en lugar de los pines de la camara, esto resulto, efectivamente en lo esperado,pues como se ve en prueba básica 1 y 2 .PNG, el hardware es capaz de reconocer que está entrando solo verde, o azul y rojo (FORMATO XRGB444 QCIF).
 
-##Conclusión
+## Conclusión
 
 ```
 El error puede ser debido a que esperamos una imagen muy perfecta de la camara, lo cual evidentemente no se puede obtener.
