@@ -7,11 +7,11 @@ Para este fin se cuenta con los siguientes modulos:
 
   ## Divisor de Frecuencia (DivFreqPWM.v)
  
- El cual haciendo uso del relog de 100MHz devuelte un reloj de 20kHz.
+ El cual haciendo uso del relog de 100MHz devuelve un reloj de 20kHz.
 ## Maquina de estados PWM (MaqinaEstadosPWM.v)
 
- Recibe una orden la cual activa o desactiva el generador pwm, lo reinicia y ademas selecciona el ancho del pulso el cual se ve reflejado en el angulo del servo   motor.
+ Recibe una orden la cual activa o desactiva el generador pwm, lo reinicia y ademas selecciona el ancho del pulso el cual se ve reflejado en el angulo del servo   motor, en cuanto a esto este modulo recibe el input orden de 3 bits la cual se pasa por 2 algoritmos del tipo case, el primero comprueba el bit mas significativo para activar el generador PWM o hacer reset si fuese necesario, en el segundo se segun su respectivo valor de 0 a 2  se devuelven 2 bits tambien de 0 a 2 los cuales controlan el ancho la señal PWM
 ## PWM (PWM.v)
  
- Recibe los el dato grados del modulo anterior le cual establece el ancho de pulso para poder lograr -90° 0° y 90° en el servo y brindando la señal PWM final.
+ Recibe los el dato grado de 2 bits con el cual mediante un .
  
