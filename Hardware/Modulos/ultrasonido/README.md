@@ -3,7 +3,7 @@
  ## Funcionalidad
  Este modulo tiene como finalidad calcular la distancia entre el robot y un obstaculo cuando se le ordene. Con esto podremos identificar  
  el contorno que rodea al robot fijando una distancia de reconocimiento previa para caracterizar la deteccion, en este caso, una pared 
- que se encuentre en frente del sensor de ultrasonido. En conjunto con el módulo de servomotor y cámara el obetivo es la contruccion de un radar, 
+ que se encuentre en frente del sensor de ultrasonido. En conjunto con el módulo de servomotor y cámara el objetivo es la contruccion de un radar, 
  de tal forma que se pueda mapear un laberinto representado por una matriz, por último, esta informacion se enviará a un módulo de comunicación 
  serial (UART) para visualización. Cada posicion de esta matriz tendra informacion de un cuadrante que el robot debe caracterizar, en este caso 
  se hara uso del ultrasonido para identificar la presencia de 3 paredes, (izquierda, centro y derecha relativo a la posicion a donde mira el robot),
@@ -41,6 +41,8 @@
  bajada de la señal  bajo ciertas condiciones, (esto para independizar la duración del pulso de la duración de la señal de habilitacion). Este modulo tambien cuenta
  con una señal de reset que inicializa todas la variables en 0 con el fin de poder generar otro pulso, (una vez generado un pulso la única manera de generar otro es 
  mediante la variable reset debido a la arquitectura usada).
+ 
+ 
  
  
  
