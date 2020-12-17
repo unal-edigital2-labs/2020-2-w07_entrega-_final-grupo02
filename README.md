@@ -26,6 +26,7 @@ Con todos los modulos de hardware se utilizó un procesador para unirlos y poner
 * [Uart1 Arduino](https://github.com/unal-edigital2/w07_entrega-_final-grupo02/tree/main/Hardware/Modulos/uart1_Arduino)
 * [Uart2 Bluethoot](https://github.com/unal-edigital2/w07_entrega-_final-grupo02/tree/main/Hardware/Modulos/uart2_bluetooth)
 * [Ultrasonido](https://github.com/unal-edigital2/w07_entrega-_final-grupo02/tree/main/Hardware/Modulos/ultrasonido)
+* [Espacio de Memoria](https://github.com/unal-edigital2/w07_entrega-_final-grupo02/tree/main/Integracion%20completa/Memory%20Space)
 
 
 ## Videos  
