@@ -18,7 +18,7 @@ Se intentó hacer un modulo de procesamiento de imagen para el reconocimiento de
 Con todos los modulos de hardware se utilizó un procesador para unirlos y ponerlos a trabajar juntos. Con ello se realizó el software correspondiente y se consiguió recorrer unos cuantos laberintos (dandole los estimulos de una manera manual).
 ![](/Captura%20de%20pantalla%20de%202020-12-16%2019-34-48.png)
 
-* [Frimware](https://github.com/unal-edigital2/w07_entrega-_final-grupo02/blob/main/Firmware)
+* [Firmware](https://github.com/unal-edigital2/w07_entrega-_final-grupo02/blob/main/Firmware)
 * [Cámara](https://github.com/unal-edigital2/w07_entrega-_final-grupo02/tree/main/Hardware/Modulos/camara/Procesamiento)
 * [Cámara Test](https://github.com/unal-edigital2/w07_entrega-_final-grupo02/tree/main/Hardware/Modulos/camara/PruebaFuncional_vga)
 * [Infrarrojo](https://github.com/unal-edigital2/w07_entrega-_final-grupo02/tree/main/Hardware/Modulos/infrarojos)
