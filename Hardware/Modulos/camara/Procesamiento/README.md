@@ -62,6 +62,9 @@ simulación triangulo: En este test bench se simulo un color que iba aumentando 
 Al unirlo con el procesador y poniendo hubieron problemas puesto que no determinaba de una manera correcta el color. No fue posible solucionar esto en el transcurso del semestre, pues no logramos determinar si era un problema de sincronización del hardware o un problema de la camara como tal.
 Lo único que se pudo hacer fue conectar directamente : 11110000, y 00001111 (prueba básica.PNG) en lugar de los pines de la camara, esto resulto, efectivamente en lo esperado,pues como se ve en prueba básica 1 y 2 .PNG, el hardware es capaz de reconocer que está entrando solo verde, o azul y rojo (FORMATO XRGB444 QCIF).
 
+![](/Hardware/Modulos/camara/Procesamiento/Prueba%20básica.jpg)
+![](/Hardware/Modulos/camara/Procesamiento/PruebaBásica1.jpg)
+![](/Hardware/Modulos/camara/Procesamiento/Pruebásica2.jpg)
 ## Conclusión
 
 ```
