@@ -17,7 +17,7 @@ Byte2 será donde se cuenten los pixeles de las filas
 Ahora de Byte 2 se pasa a Byte 1 si vref y href son 0, lo que indica que se acabó lo capturado en la presente fila,luego hay que cambiar a la siguiente, quedandonos a la espera de otro href.
 
 Finalmente, si detectamos de nuevo que hay un vref, significaría que se acabó la imagen, luego hemos tomado una foto.
-
+![](/Hardware/Modulos/camara/Procesamiento/MaquinaEstadosFOTO.PNG)
 ## Procesamiento
 
 Con base en lo anterior se planteó el procesar la imagen comparando el ancho de cada fila(siendo esta de un color de interes), luego
@@ -54,6 +54,8 @@ simulación cuadrado: Se puso en el test bench un solo color (Verde) y como se e
 ```
 simulación triangulo: En este test bench se simulo un color que iba aumentando varios pixeles de ancho en cada fila, luego en la imagen se puede ver que detecta  77 anchos mayores, y el resto de anchos iguales (pues al final el ancho aumentó hasta salirse de la pantalla).
 ```
+![](/Hardware/Modulos/camara/Procesamiento/SimulaciónCuadrado.jpg)
+![](/Hardware/Modulos/camara/Procesamiento/SimulaciónMitadTriangulo.jpg)
 
 ## Resultados
 
