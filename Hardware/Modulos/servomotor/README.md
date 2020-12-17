@@ -14,4 +14,4 @@ Para este fin se cuenta con los siguientes modulos:
 ## PWM (PWM.v)
  
  Recibe los el input grado de 2 bits con el cual mediante mediante un Case asignaria un valor la variable ancho de entre 10 a 50 que junto con el reloj de 20kHz y un contador integrado a este mismo modulo se generiaria una señal de 20kHz dutty cycle de duracion etre 0.5ms a 2ms lo cual le permitira al servo motor girar entre -90 0 90 grados y que permitira al ultra sonido y a la camara enfocar todas las paredes adyacentes.
- 
+![](/Hardware/Modulos/servomotor/Pwm.png) 
