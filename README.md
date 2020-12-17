@@ -19,8 +19,13 @@ Con todos los modulos de hardware se utilizó un procesador para unirlos y poner
 ![](/Captura%20de%20pantalla%20de%202020-12-16%2019-34-48.png)
 
 * [Frimware](https://github.com/unal-edigital2/w07_entrega-_final-grupo02/blob/main/Firmware)
-* [cámara](https://github.com/unal-edigital2/w07_entrega-_final-grupo02/tree/main/Hardware/Modulos/camara/Procesamiento)
-
+* [Cámara](https://github.com/unal-edigital2/w07_entrega-_final-grupo02/tree/main/Hardware/Modulos/camara/Procesamiento)
+* [Cámara Test](https://github.com/unal-edigital2/w07_entrega-_final-grupo02/tree/main/Hardware/Modulos/camara/PruebaFuncional_vga)
+* [Infrarrojo](https://github.com/unal-edigital2/w07_entrega-_final-grupo02/tree/main/Hardware/Modulos/infrarojos)
+* [PWM](https://github.com/unal-edigital2/w07_entrega-_final-grupo02/tree/main/Hardware/Modulos/servomotor)
+* [Uart1 Arduino](https://github.com/unal-edigital2/w07_entrega-_final-grupo02/tree/main/Hardware/Modulos/uart1_Arduino)
+* [Uart2 Bluethoot](https://github.com/unal-edigital2/w07_entrega-_final-grupo02/tree/main/Hardware/Modulos/uart2_bluetooth)
+* [Ultrasonido](https://github.com/unal-edigital2/w07_entrega-_final-grupo02/tree/main/Hardware/Modulos/ultrasonido)
 
 
 ## Videos  
