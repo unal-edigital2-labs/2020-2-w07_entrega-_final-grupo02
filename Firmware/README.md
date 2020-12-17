@@ -28,4 +28,5 @@ El laberinto propuesto fue:
 ![](/Firmware/LaberintoPropuesto.PNG)
 El software fue probado y procesado, los resultados se encuentran en la carpeta "mapeoEnc++" donde apreciamos que el robot caracterizo exitosamente el laberinto propuesto.
 
-
+![](/Firmware/MapeoConC%2B%2B/ResultadoDelMapeo.PNG)
+![](/Firmware/MapeoConC%2B%2B/ResultadoDelMapeoColor.PNG)
