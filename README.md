@@ -19,8 +19,7 @@ Con todos los modulos de hardware se utilizó un procesador para unirlos y poner
 ![](/Captura%20de%20pantalla%20de%202020-12-16%2019-34-48.png)
 
 
-[cámara](https://github.com/unal-edigital2/w07_entrega-_final-grupo02/tree/main/Hardware/Modulos/camara/Procesamiento)
+* [cámara](https://github.com/unal-edigital2/w07_entrega-_final-grupo02/tree/main/Hardware/Modulos/camara/Procesamiento)
 
 ## Videos  
-En cada carpeta de modulos hay un video de cada prueba funcional individual, el video que muestra la resolucón del laberitno completo se encuentra en: 
-https://www.youtube.com/watch?v=Pdu0hr4bE8M&feature=youtu.be&ab_channel=Maicolfontecha
+En cada carpeta de modulos hay un video de cada prueba funcional individual, el video que muestra la resolucón del laberitno completo se encuentra en el siguiente [link](https://www.youtube.com/watch?v=Pdu0hr4bE8M&feature=youtu.be&ab_channel=Maicolfontecha)
