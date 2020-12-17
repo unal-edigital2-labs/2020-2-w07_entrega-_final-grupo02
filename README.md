@@ -11,7 +11,7 @@ El presente proyecto tuvo como fin la creación de un robot el cual fuera capaz 
 * **Andres Camilo Unibio Barbosa** - acunibiob@unal.edu.co
 
 ## Diseño y funcionalidad.
-
+![](/Captura%20de%20pantalla%20de%202020-12-16%2019-34-48.png)
 ## Videos  
 En cada carpeta de modulos hay un video de cada prueba funcional individual, el video que muestra la resolucón del laberitno completo se encuentra en: 
-https://www.youtube.com/watch?v=Pdu0hr4bE8M&feature=youtu.be&ab_channel=Maicolfontechadiaz
+https://www.youtube.com/watch?v=Pdu0hr4bE8M&feature=youtu.be&ab_channel=Maicolfontecha
