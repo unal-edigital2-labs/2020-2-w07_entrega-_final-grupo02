@@ -23,5 +23,9 @@ Con está se envian la matriz caracterizada via UART hacia un celular y de esta 
 
 
 ## Envio de datos y resultados
+
+El laberinto propuesto fue:
+![](/Firmware/LaberintoPropuesto.PNG)
 El software fue probado y procesado, los resultados se encuentran en la carpeta "mapeoEnc++" donde apreciamos que el robot caracterizo exitosamente el laberinto propuesto.
+
 
