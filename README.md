@@ -21,5 +21,8 @@ Con todos los modulos de hardware se utilizó un procesador para unirlos y poner
 
 * [cámara](https://github.com/unal-edigital2/w07_entrega-_final-grupo02/tree/main/Hardware/Modulos/camara/Procesamiento)
 
+[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://youtu.be/vt5fpE0bzSY)
+
+
 ## Videos  
 En cada carpeta de modulos hay un video de cada prueba funcional individual, el video que muestra la resolucón del laberitno completo se encuentra en el siguiente [link](https://www.youtube.com/watch?v=Pdu0hr4bE8M&feature=youtu.be&ab_channel=Maicolfontecha)
