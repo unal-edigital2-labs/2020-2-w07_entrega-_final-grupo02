@@ -174,19 +174,19 @@ assign CAM_pwdn = 0;			// Power down mode
                                          
                                   if((XRGB[11:8]>14)||(XRGB[7:4]>14)||(XRGB[3:0]>14))begin
                                          
-                                         if(XRGB[11:8]>14)begin //para que la imagen se vea roja, tiene que ser mucho mayor a los otros dos componentes 
+					  if(XRGB[11:8]>12)begin //para que la imagen se vea roja, tiene que ser mucho mayor a los otros dos componentes 
                                           redCounter=redCounter+1;                                   //Con que sea + de 5 tendra un tono bastante rojo.
                                           PixelInterested=1; 
                                           end else 
                                           redCounter=redCounter;
                                           
-                                          if(XRGB[7:4]>14)begin  //lo mismo para los demas colores
+					  if(XRGB[7:4]>12)begin  //lo mismo para los demas colores
                                           greenCounter=greenCounter+1;
                                           PixelInterested=1;
                                           end else 
                                           greenCounter=greenCounter;
                                           
-                                          if(XRGB[3:0]>14)begin 
+					  if(XRGB[3:0]>12)begin 
                                           blueCounter=blueCounter+1;
                                           PixelInterested=1;
                                           end else 
