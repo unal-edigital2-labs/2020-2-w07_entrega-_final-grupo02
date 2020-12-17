@@ -13,5 +13,5 @@ Para este fin se cuenta con los siguientes modulos:
  Recibe una orden la cual activa o desactiva el generador pwm, lo reinicia y ademas selecciona el ancho del pulso el cual se ve reflejado en el angulo del servo   motor, en cuanto a esto este modulo recibe el input orden de 3 bits la cual se pasa por 2 algoritmos del tipo case, el primero comprueba el bit mas significativo para activar el generador PWM o hacer reset si fuese necesario, en el segundo se segun su respectivo valor de 0 a 2  se devuelven 2 bits tambien de 0 a 2 los cuales controlan el ancho la señal PWM
 ## PWM (PWM.v)
  
- Recibe los el dato grado de 2 bits con el cual mediante un .
+ Recibe los el input grado de 2 bits con el cual mediante mediante un Case asignaria un valor la variable ancho de entre 10 a 50 que junto con el reloj de 20kHz y un contador integrado a este mismo modulo se generiaria una señal de 20kHz dutty cycle de duracion etre 0.5ms a 2ms lo cual le permitira al servo motor girar entre -90 0 90 grados y que permitira al ultra sonido y a la camara enfocar todas las paredes adyacentes.
  
