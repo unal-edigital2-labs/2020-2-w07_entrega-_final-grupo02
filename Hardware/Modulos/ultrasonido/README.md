@@ -49,6 +49,6 @@
  reloj principal para luego invertirla durante otros n ciclos de reloj, (la cuenta de los ciclos transcurridos se lleva en una variable auxiliar), la variable n dependerá
  de la  frecuencia del reloj principal y la del reloj deseado.El diagrama total de este modulo controladom por la maquina de estados es mostrado a continuación.
  
- ![](Hardware/Modulos/ultrasonido/Maquina%20de%20estados%20ultrasonido.PNG)
+ ![](/Hardware/Modulos/ultrasonido/Maquina%20de%20estados%20ultrasonido.PNG)
  
  
